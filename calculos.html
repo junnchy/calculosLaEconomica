@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="prueba.js"></script>
+		<!--Jquery UI-->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<title>
+			Calculos
+		</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#"><img src="../img/logo-cabecera.png"/></a>
+					</div>
+					<div class="pull-right">
+						<ul>
+							<li><button class="btn btn-default"><a href="../index.html">Home</a></button></button></li>
+							<li><button class="btn btn-default" id="active"> <a href="calculos.html">Calculos</a></button></li>
+							<li><button class="btn btn-default"><a href="contacto.html">Contacto</a></button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs">
+ 			<ul>
+    			<li><a href="#tabs-1">Techo Hormigon</a></li>
+    			<li><a href="#tabs-2">Cieloraso Placas de Yeso</a></li>
+   				<li><a href="#tabs-3">Revestimiento con Placas</a></li>
+ 			 </ul>
+  		<div id="tabs-1">
+			<div class="c-techos"> <!--c- es como hago la reduccion de la palabra calculo-->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>
+								Techo de Material con Hormigon
+							</h1>
+							<form role="form" id="techoH">
+								<div class="form-group">
+									<label for="largo-techo">Largo del techo:</label>
+									<input type="text" class="form-control" id="largo-t">	
+								</div>	
+								<div class="form-group">
+									<label for="ancho-techo">Ancho del techo:</label>
+									<input type="text" class="form-control" id="ancho-t">	
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<button type="submit" class="btn btn-default"> Calcular </button>
+									</div>	
+									<div class="col-md-5" id="c-t-selec">
+										<form action="#">
+	 										<fieldset>
+	    									<label for="tipoLadrillo">Tipo de Ladrillo</label>
+	    									<select name="tipoL" id="tipoL">
+	      										<option selected="selected">Telgopor</option>
+	      										<option>Ceramico</option>
+	    									</select>
+											</fieldset>
+										</form>
+									</div>
+								</div>	
+							</form>
+						</div>
+						<div class="col-md-6" id="resultados">
+							<h1 id="rtdo"></h1>
+							<div class="row">
+								<div class="col-md-6">
+									<p class="t-metro2"></p>
+								</div>
+								<div class="col-md-6">
+									<p class="t-vigas"></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p class="t-arena"></p>
+								</div>
+								<div class="col-md-6">
+									<p class="t-cementos"></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p class="t-mallas"></p>
+								</div>
+								<div class="col-md-6">
+									<p class="t-ladtelgo"></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="alert alert-info">
+									<strong>Atencion</strong> Los calculos que a continuacion se presentan son estimativos para una carga de 4cm de hormigon. Corrobore los resultados con un profecional antes de tomarlo por cierto. 
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="tabs-2">
+    		<div class=".c-cielorasoJT"> <!--c- es como hago la reduccion de la palabra calculo-->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<h1>
+									Cielorazo Junta Tomada con Placas de Yeso
+								</h1>
+								<form role="form" id="placasJT">
+									<div class="form-group">
+										<label for="largo-techo">Largo del techo:</label>
+										<input type="text" class="form-control" id="largo-t">	
+									</div>	
+									<div class="form-group">
+										<label for="ancho-techo">Ancho del techo:</label>
+										<input type="text" class="form-control" id="ancho-t">	
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<button type="submit" class="btn btn-default"> Calcular </button>
+										</div>
+									</div>		
+								</form>
+							</div>
+							<div class="col-md-6" id="resultados"> <!--Hay que cabiar los nombres de los resultados-->
+								<h1 id="rtdo"></h1>
+								<div class="row">
+									<div class="col-md-6">
+										<p class="t-metro2"></p>
+									</div>
+									<div class="col-md-6">
+										<p class="t-vigas"></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<p class="t-arena"></p>
+									</div>
+									<div class="col-md-6">
+										<p class="t-cementos"></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<p class="t-mallas"></p>
+									</div>
+									<div class="col-md-6">
+										<p class="t-ladtelgo"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="alert alert-info">
+										<strong>Atencion</strong> Los calculos que a continuacion se presentan son estimativos. Corrobore los resultados con un profecional antes de tomarlo por cierto. 
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+  		</div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+		</div>
+		<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>
+								Redes
+							</h3>
+							<ul>
+								<li><a href="https://www.facebook.com/LaEconomicAberturas/?fref=ts">Facebook</a></li>
+								<li><a href="https://twitter.com/Laeconomicaa">Twitter</a></li>
+								<li><a href="">Instagram</a></li>
+							</ul>
+						</div>
+						<div class="pull-right">
+							<p> &copy; 2016</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</body>
+</html>
